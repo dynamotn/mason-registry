@@ -27,7 +27,7 @@ languages:
   - Typescript
   - Yaml
 categories:
-  - LSP
+  - Linter
 
 source:
   # renovate:datasource=git-refs
