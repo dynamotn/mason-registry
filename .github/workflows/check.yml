@@ -1,0 +1,52 @@
+# The same checks as the pre-commit hooks
+name: Check
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  stylua:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # The version is read off the pre-commit hook, so the one Renovate bumps
+      # there is the one used here too.
+      - name: Read StyLua version
+        id: version
+        run: |
+          rev="$(yq '.repos[] | select(.repo == "https://github.com/JohnnyMorganz/StyLua") | .rev' .pre-commit-config.yaml)"
+          echo "stylua=${rev#v}" >> "$GITHUB_OUTPUT"
+      - uses: JohnnyMorganz/stylua-action@76fd70c03e6340ceaf673366712db9b20560b402 # v5.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: ${{ steps.version.outputs.stylua }}
+          args: --check .
+  registry:
+    # Both Neovims DyNeo runs on: its `stable` channel and its `latest` one
+    strategy:
+      fail-fast: false
+      matrix:
+        neovim: [stable, nightly]
+    name: registry (${{ matrix.neovim }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: rhysd/action-setup-vim@febef33995d6649302e9d88dda81e071b68f16a7 # v1.6.1
+        with:
+          neovim: true
+          version: ${{ matrix.neovim }}
+      - name: Check packages
+        run: nvim --clean --headless -l tests/registry.lua
