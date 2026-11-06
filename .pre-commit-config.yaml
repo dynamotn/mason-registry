@@ -13,7 +13,7 @@ repos:
           - --fix=lf
       - id: trailing-whitespace
   - repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v2.5.2
+    rev: v2.6.0
     hooks:
       - id: stylua-system
   - repo: local
