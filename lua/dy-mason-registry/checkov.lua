@@ -14,7 +14,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:pypi/checkov@3.3.30',
+    id = 'pkg:pypi/checkov@3.4.0',
     supported_platforms = { 'unix' },
   },
   bin = {

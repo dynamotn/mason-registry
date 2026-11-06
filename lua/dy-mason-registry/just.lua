@@ -12,7 +12,7 @@ return {
     'Formatter',
   },
   source = {
-    id = 'pkg:github/casey/just@1.58.0',
+    id = 'pkg:github/casey/just@1.59.0',
     asset = {
       {
         target = 'darwin_arm64',

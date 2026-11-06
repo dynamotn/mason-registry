@@ -12,7 +12,7 @@ return {
     'Formatter',
   },
   source = {
-    id = 'pkg:github/Orange-OpenSource/hurl@8.0.1',
+    id = 'pkg:github/Orange-OpenSource/hurl@8.1.0',
     asset = {
       {
         target = 'darwin_arm64',

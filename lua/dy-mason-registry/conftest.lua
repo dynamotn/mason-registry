@@ -13,7 +13,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:github/open-policy-agent/conftest@v0.70.1',
+    id = 'pkg:github/open-policy-agent/conftest@v0.71.1',
     asset = {
       {
         target = 'darwin_arm64',
