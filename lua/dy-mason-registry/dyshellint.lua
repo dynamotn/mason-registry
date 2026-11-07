@@ -12,7 +12,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:github/dynamotn/dyshellint@v1.1.0',
+    id = 'pkg:github/dynamotn/dyshellint@v1.2.0',
     asset = {
       {
         target = 'darwin_arm64',
