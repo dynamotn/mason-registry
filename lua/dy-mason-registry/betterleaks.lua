@@ -10,7 +10,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:github/betterleaks/betterleaks@v1.9.0',
+    id = 'pkg:github/betterleaks/betterleaks@v1.10.0',
     asset = {
       {
         target = 'darwin_arm64',

@@ -12,7 +12,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:npm/%40asyncapi/cli@6.2.2',
+    id = 'pkg:npm/%40asyncapi/cli@6.3.0',
   },
   bin = {
     asyncapi = 'npm:asyncapi',

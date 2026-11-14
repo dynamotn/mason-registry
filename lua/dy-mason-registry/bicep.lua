@@ -12,7 +12,7 @@ return {
     'Formatter',
   },
   source = {
-    id = 'pkg:github/Azure/bicep@v0.48.1',
+    id = 'pkg:github/Azure/bicep@v0.49.2',
     asset = {
       {
         target = 'darwin_arm64',
