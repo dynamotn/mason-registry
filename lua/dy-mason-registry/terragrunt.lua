@@ -13,7 +13,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:github/gruntwork-io/terragrunt@v1.2.1',
+    id = 'pkg:github/gruntwork-io/terragrunt@v1.2.2',
     asset = {
       {
         target = 'darwin_arm64',

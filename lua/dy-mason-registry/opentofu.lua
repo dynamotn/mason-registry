@@ -13,7 +13,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:github/opentofu/opentofu@v1.13.2',
+    id = 'pkg:github/opentofu/opentofu@v1.13.9',
     asset = {
       {
         target = 'darwin_arm64',

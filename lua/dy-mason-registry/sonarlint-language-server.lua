@@ -2,7 +2,7 @@
 -- leaves out, so both spellings are derived from one declaration instead of
 -- drifting apart on the next bump.
 -- renovate: datasource=github-releases depName=SonarSource/sonarlint-vscode
-local version = '6.2.0+91200'
+local version = '6.3.0+91276'
 local release = version:match('^[^+]+')
 
 return {
