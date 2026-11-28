@@ -12,7 +12,7 @@ return {
     'Compiler',
   },
   source = {
-    id = 'pkg:npm/likec4@1.60.0',
+    id = 'pkg:npm/likec4@1.61.0',
   },
   bin = {
     likec4 = 'npm:likec4',

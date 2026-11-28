@@ -12,7 +12,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:npm/%40graphql-inspector/cli@7.0.4',
+    id = 'pkg:npm/%40graphql-inspector/cli@7.0.8',
   },
   bin = {
     ['graphql-inspector'] = 'npm:graphql-inspector',

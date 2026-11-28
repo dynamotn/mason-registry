@@ -14,7 +14,7 @@ return {
   -- No release ships the escript, so it is built from the tagged source; that
   -- needs `rebar3` and Erlang, which dytoy installs (`dytoy --tool erlang`)
   source = {
-    id = 'pkg:github/WhatsApp/erlfmt@v1.8.0',
+    id = 'pkg:github/WhatsApp/erlfmt@v1.9.0',
     build = {
       target = 'unix',
       run = '</dev/null rebar3 as release escriptize\n',

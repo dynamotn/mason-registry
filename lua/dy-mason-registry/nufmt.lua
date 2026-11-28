@@ -15,7 +15,7 @@ return {
   -- pinned; building it needs `cargo`, which dytoy installs (`dytoy --tool
   -- rust`)
   source = {
-    id = 'pkg:cargo/nufmt@13f2f8c3873ae73ba7e95e5e8fd4bdac6c019f5f?repository_url=https://github.com/nushell/nufmt&rev=true',
+    id = 'pkg:cargo/nufmt@330ff3cf2a052036028080d60ed96ea12a13c046?repository_url=https://github.com/nushell/nufmt&rev=true',
   },
   bin = {
     nufmt = 'cargo:nufmt',

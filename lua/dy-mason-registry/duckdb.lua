@@ -12,7 +12,7 @@ return {
     'Runtime',
   },
   source = {
-    id = 'pkg:github/duckdb/duckdb@v2.0.0',
+    id = 'pkg:github/duckdb/duckdb@v2.0.1',
     asset = {
       {
         target = 'darwin_x64',

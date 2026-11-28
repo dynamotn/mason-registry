@@ -12,7 +12,7 @@ return {
     'LSP',
   },
   source = {
-    id = 'pkg:npm/%40likec4/lsp@1.60.0',
+    id = 'pkg:npm/%40likec4/lsp@1.61.0',
   },
   bin = {
     ['likec4-lsp'] = 'npm:likec4-lsp',

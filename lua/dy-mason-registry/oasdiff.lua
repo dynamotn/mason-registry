@@ -12,7 +12,7 @@ return {
     'Linter',
   },
   source = {
-    id = 'pkg:github/oasdiff/oasdiff@v1.37.0',
+    id = 'pkg:github/oasdiff/oasdiff@v1.39.0',
     asset = {
       {
         target = 'darwin_arm64',
